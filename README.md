@@ -38,5 +38,5 @@ Envie a pasta inteira para qualquer hospedagem estática (Netlify, Vercel, Cloud
 ## Observações
 
 - O Tailwind é carregado pelo CDN, o que dispensa instalação. Para produção, o ideal é gerar o CSS com o Tailwind CLI (mais leve e rápido). Dá para fazer essa troca depois.
-- O cronômetro fica salvo no aparelho de cada visitante (`localStorage`) e não reinicia ao atualizar a página.
+- Cronômetro: ao atualizar a página ele continua de onde estava (não volta a 20 min). Ao fechar a página e abrir de novo, recomeça em 20 min. Ao chegar em 00:00, fica em 00:00.
 - Rastreamento (pixel/analytics) ainda não está incluso.
