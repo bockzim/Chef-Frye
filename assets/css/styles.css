@@ -1,0 +1,7 @@
+/* Tema (cores), modo escuro e ajustes finos. Classes de layout vêm do Tailwind. */
+:root{--ink:43 23 18;--sur:255 250 243;--sur2:255 255 255;--heat:217 56 30;--gold:255 194 31;--leaf:23 122 69;--mut:111 90 82;--soft:255 232 204;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:255 241 230;--sur:29 15 11;--sur2:43 24 18;--mut:201 173 160;--leaf:79 209 139;--soft:48 27 20}}
+html{scroll-behavior:smooth;scroll-padding-top:56px}
+body{background:rgb(var(--sur));color:rgb(var(--ink));padding-bottom:env(safe-area-inset-bottom,0px);-webkit-tap-highlight-color:transparent}
+.rail{scrollbar-width:none}.rail::-webkit-scrollbar{display:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}

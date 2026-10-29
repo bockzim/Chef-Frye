@@ -1,0 +1,3 @@
+// Configuração do Tailwind (cores ligadas às variáveis de assets/css/styles.css)
+const c=n=>`rgb(var(--${n}) / <alpha-value>)`;
+tailwind.config={theme:{extend:{fontFamily:{d:['"Bricolage Grotesque"','system-ui','sans-serif'],b:['Figtree','system-ui','sans-serif']},colors:{soft:c('soft'),ink:c('ink'),sur:c('sur'),sur2:c('sur2'),heat:c('heat'),gold:c('gold'),leaf:c('leaf'),mut:c('mut')},keyframes:{steam:{'0%':{transform:'translateY(0)',opacity:0},'30%':{opacity:.8},'100%':{transform:'translateY(-30px)',opacity:0}},pop:{'0%,100%':{transform:'scale(1)'},'50%':{transform:'scale(1.05)'}},marquee:{to:{transform:'translateX(-50%)'}}},animation:{steam:'steam 2.2s infinite',pop:'pop 2.4s ease-in-out infinite',marquee:'marquee 50s linear infinite'}}}}
